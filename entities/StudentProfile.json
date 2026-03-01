@@ -1,0 +1,93 @@
+{
+  "name": "StudentProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the student"
+    },
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    },
+    "education_level": {
+      "type": "string",
+      "enum": [
+        "high_school",
+        "undergraduate",
+        "graduate",
+        "postgraduate"
+      ]
+    },
+    "current_field": {
+      "type": "string"
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "career_goals": {
+      "type": "string"
+    },
+    "personality_type": {
+      "type": "string"
+    },
+    "predicted_careers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "career": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "match_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "quiz_scores": {
+      "type": "object",
+      "properties": {
+        "analytical": {
+          "type": "number"
+        },
+        "creative": {
+          "type": "number"
+        },
+        "social": {
+          "type": "number"
+        },
+        "practical": {
+          "type": "number"
+        },
+        "leadership": {
+          "type": "number"
+        }
+      }
+    },
+    "avatar_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "name"
+  ]
+}

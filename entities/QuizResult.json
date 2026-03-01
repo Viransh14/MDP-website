@@ -1,0 +1,67 @@
+{
+  "name": "QuizResult",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "quiz_type": {
+      "type": "string",
+      "enum": [
+        "aptitude",
+        "interest",
+        "personality"
+      ]
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {
+            "type": "number"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "total_score": {
+      "type": "number"
+    },
+    "ai_analysis": {
+      "type": "string"
+    },
+    "career_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "career": {
+            "type": "string"
+          },
+          "confidence_score": {
+            "type": "number"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "personality_traits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email",
+    "quiz_type"
+  ]
+}
