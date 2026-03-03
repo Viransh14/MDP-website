@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
+import { base44 } from '../api/base44Client';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
 import { 
   Brain, 
   Target, 
@@ -19,9 +18,9 @@ import {
   Users,
   Clock
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Progress } from '../components/ui/progress';
 import {
   AreaChart,
   Area,

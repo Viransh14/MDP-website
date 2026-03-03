@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
+import { base44 } from '../api/base44Client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../utils';
 import { 
   Brain, 
   ChevronRight, 
@@ -13,11 +13,11 @@ import {
   Clock,
   Award
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Label } from '@/components/ui/label';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Progress } from '../components/ui/progress';
+import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
+import { Label } from '../components/ui/label';
 
 const questions = [
   {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
+import { base44 } from '../api/base44Client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../utils';
 import { 
   Heart, 
   ChevronRight, 
@@ -19,10 +19,10 @@ import {
   Camera,
   Briefcase
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { Slider } from '@/components/ui/slider';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Progress } from '../components/ui/progress';
+import { Slider } from '../components/ui/slider';
 
 const personalityQuestions = [
   {

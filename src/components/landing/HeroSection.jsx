@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from '../../components/ui/button';
 import { ArrowRight, Sparkles, Brain, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../../utils';
 
 export default function HeroSection() {
   return (

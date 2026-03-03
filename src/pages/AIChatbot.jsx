@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { base44 } from '@/api/base44Client';
+import { base44 } from '../api/base44Client';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -12,10 +12,10 @@ import {
   Trash2,
   Brain
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card } from '@/components/ui/card';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Card } from '../components/ui/card';
+import { ScrollArea } from '../components/ui/scroll-area';
 
 export default function AIChatbot() {
   const [user, setUser] = useState(null);

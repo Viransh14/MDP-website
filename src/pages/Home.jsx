@@ -9,9 +9,9 @@ import TechStack from '../components/landing/TechStack';
 import TeamSection from '../components/landing/TeamSection';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../utils';
 import { ArrowRight, Brain } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '../components/ui/button';
 
 export default function Home() {
   return (

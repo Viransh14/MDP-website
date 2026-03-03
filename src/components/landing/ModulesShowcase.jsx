@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../../utils';
 import { 
   Compass, 
   Heart, 
@@ -11,7 +11,7 @@ import {
   ArrowRight,
   Sparkles
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '../../components/ui/button';
 
 export default function ModulesShowcase() {
   const modules = [
