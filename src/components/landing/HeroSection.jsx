@@ -132,7 +132,7 @@ export default function HeroSection() {
           className="mt-20 grid grid-cols-3 gap-8 max-w-3xl mx-auto"
         >
           {[
-            { value: "10K+", label: "Students Guided" },
+            { value: "0", label: "Students Guided" },
             { value: "98%", label: "Accuracy Rate" },
             { value: "500+", label: "Career Paths" }
           ].map((stat, i) => (

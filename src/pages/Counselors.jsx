@@ -228,7 +228,7 @@ export default function Counselors() {
         >
           {[
             { label: "Expert Counselors", value: "50+", icon: Users },
-            { label: "Sessions Completed", value: "10K+", icon: Video },
+            { label: "Sessions Completed", value: "0", icon: Video },
             { label: "Average Rating", value: "4.8", icon: Star },
             { label: "Success Rate", value: "96%", icon: Award }
           ].map((stat, i) => (

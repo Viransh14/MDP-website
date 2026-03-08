@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { base44 } from '../api/base44Client';
+import { invokeLLM } from '../api/ChatClient';
 import { useQuery } from '@tanstack/react-query';
 
 

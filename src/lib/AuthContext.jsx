@@ -1,5 +1,5 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
-import { base44 } from '../api/base44Client';
+/*import React, { createContext, useState, useContext, useEffect } from 'react';
+import { invokeLLM } from '../api/ChatClient';
 import { appParams } from '../lib/app-params';
 import { createAxiosClient } from '@base44/sdk/dist/utils/axios-client';
 
@@ -151,4 +151,4 @@ export const useAuth = () => {
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
-};
+};*/
